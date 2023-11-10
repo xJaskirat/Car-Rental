@@ -1,0 +1,162 @@
+/* NAV CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+}
+
+nav .left{
+    text-align: left;
+    color: aliceblue;
+    margin-left: 15px;
+
+}
+nav .left span{
+    color: blueviolet;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(3, 3, 51);
+    height:70px;
+    width: 94vw;
+    border-radius: 36px;
+    margin: 22px auto 0;
+    padding: 0 auto 0 auto;
+
+}
+nav .search input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 320px 0 0
+}
+nav ul li{
+    margin: 0px 20px ;
+    text-shadow: 3px black;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+nav #aa{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 75px;
+}
+nav button{
+    border:1px solid rgba(137, 43, 226, 0.507);
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    background-color: rgba(137, 43, 226, 0.507);
+    margin: 0 40px 0 0;
+    
+}
+nav button a{
+    text-decoration: none;
+    color: white;
+}
+nav button:hover{
+    border:1px solid blueviolet;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    
+    background-color: blueviolet;
+    margin: 0 40px 0 0;
+}
+
+
+/* ********************************************************************************************************************* */
+
+/* MAIN CSS */
+body{
+    background-color: aliceblue;
+}
+.main{
+    display:  flex ;  
+}
+.main .left  {
+    /* width:16%; */
+    height: 0;
+    margin: 100px 0 0 200px;
+}
+.main .left h1{
+    font-size: 70px;
+}
+.main .left h1 span{
+    color: #8a2be3;
+}
+.main .content label{
+    display: block;
+    
+    font-weight: 800;
+}
+.content form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    margin: 110px 0 0 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 80px;
+    width: 70%;
+    background-color: white;
+}
+.main .content input{
+    display: inline;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    width: 215px;
+    height: 40px; 
+}
+.main .content input[type=date]{
+    height: 18px;
+    width: 196px;
+}
+.how{
+margin: 560px 0 0 0;
+}
+.works{
+    text-align: center;
+}
+.works h1{
+    font-size: 3em;
+}
+.grid-container{
+    margin: 0 0 0 0 ;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 300px ;
+    
+    
+}
+.grid-item{
+    border: 2px solid;
+    text-align: center;
+}
+.Location img{
+    height: 100px;
+    width: 100px;
+    margin: 80px 0 0 0;
+}
+.Location h1{
+    margin: 20px 0 0 0;
+}

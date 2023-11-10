@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Car Rental</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+      </style>
+    <style>
+        *{padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+
+        }
+        .formbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+        }
+        body{
+            background-image: url(/Sign-up/backcarrental.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .formbox h1{
+            text-align: center;
+            margin: 15px 0 15px 0;
+            color: rgb(74, 18, 128);
+            font-weight: bolder;
+        }
+        .formbox form{
+            border: 1px solid black;
+            border-radius: 30px;
+            height: 620px;
+            width: 360px;
+            line-height: 33px;
+            margin: 50px 0 0 0;
+            background-color: rgba(255, 255, 255, 0.812);
+        }
+        input[type="text"],[type="password"],[type="email"],[type="number"],textarea{
+        border: 1px solid grey;
+        border-radius: 10px;
+        width:80%;
+        height:30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left:10px;
+        margin: 5px 0 0 30px;
+        
+      }
+      label[for=email],[for=name],[for=password],[for=mobile-no],[for=address],[for=city],[for=gender]{
+        margin: 0px 0 0 30px;
+        
+      }
+
+      input[type=radio]{
+        margin: 0 0 0 35px;
+      }
+      .btn{
+        text-align: center;  
+        margin: 20px 0 0 0;
+
+      }
+      .btn button{
+        border: 1px solid black;
+        border-radius: 20px;
+        height: 40px;
+        width: 20%;
+        color: white;
+        background-color:rgb(74, 18, 128);
+      }
+      .btn button:hover{
+        border: 1px solid black;
+        border-radius: 20px;
+        height: 40px;
+        width: 20%;
+        color: white;
+        background-color:rgb(35, 4, 64);
+      }
+      
+      
+    </style>
+</head>
+<body>
+    <div>
+      
+        <div class="formbox">
+          
+          <form action="">
+            <h1>Sign up</h1>
+            <label for="name">Name</label>
+            <!-- <br> -->
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <!-- <br /> -->
+            <label for="email">Email</label>
+            <!-- <br /> -->
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <!-- <br /> -->
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter password"
+            />
+            <!-- <br /> -->
+            <label for="mobile-no">Mobile no.</label><br />
+            <input
+              type="number"
+              name="number"
+              id="mobile-no"
+              placeholder="Enter mobile no."
+            />
+            <!-- <br /> -->
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" cols="30" rows="3"></textarea>
+            <!-- <br /> -->
+            <label for="city">City</label><br>
+            <input type="text" name="city" id="city" placeholder="City">
+            
+            <!-- <br /> -->
+            <label for="gender">Gender</label><br>
+            <input type="radio" value="male" name="Gender" id="male"/>
+            <label for="male">Male</label>
+            <input type="radio" value="female" name="Gender" id="female"/>
+            <label for="female">Female</label>
+            <input type="radio" value="Others" name="Gender" id="Others"/>
+            <label for="Others">Others</label><br>
+            <div class="btn">
+                <button>Sign up</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+</body>
+</html>
