@@ -1,162 +1,260 @@
 /* NAV CSS */
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    /* box-sizing: border-box; */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
 }
 
-nav .left{
-    text-align: left;
-    color: aliceblue;
-    margin-left: 15px;
-
-}
-nav .left span{
-    color: blueviolet;
-}
-nav{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: rgb(3, 3, 51);
-    height:70px;
-    width: 94vw;
-    border-radius: 36px;
-    margin: 22px auto 0;
-    padding: 0 auto 0 auto;
-
-}
-nav .search input{
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-}
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0 320px 0 0
-}
-nav ul li{
-    margin: 0px 20px ;
-    text-shadow: 3px black;
-    position: relative;
-}
-nav ul li a{
-    text-decoration: none;
-    color: aliceblue;
-    
+nav .left {
+  text-align: left;
+  color: aliceblue;
+  margin-left: 40px;
 }
 
-nav #aa{
-    text-decoration: none;
-    color: white;
-    position: relative;
-    left: 75px;
+nav .left span {
+  color: blueviolet;
+  text-shadow: 0 0 20px blueviolet;
 }
-nav button{
-    border:1px solid rgba(137, 43, 226, 0.507);
-    border-radius: 5px;
-    height: 35px;
-    width: 70px;
-    background-color: rgba(137, 43, 226, 0.507);
-    margin: 0 40px 0 0;
-    
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(3, 3, 51);
+  height: 70px;
+  width: 94vw;
+  border-radius: 36px;
+  margin: 22px auto 0;
+  padding: 0 auto 0 auto;
 }
-nav button a{
-    text-decoration: none;
-    color: white;
+nav .search input {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
 }
-nav button:hover{
-    border:1px solid blueviolet;
-    border-radius: 5px;
-    height: 35px;
-    width: 70px;
-    
-    background-color: blueviolet;
-    margin: 0 40px 0 0;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 320px 0 0;
+}
+nav ul li {
+  margin: 0px 20px;
+  text-shadow: 3px black;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  text-shadow: 0 0 20px white;
 }
 
+nav #aa {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 60px;
+}
+nav button {
+  border: 0.5px solid rgba(137, 43, 226, 0.507);
+  border-radius: 5px;
+  height: 35px;
+  width: 70px;
+  background-color: rgba(137, 43, 226, 0.507);
+  margin: 0 40px 0 0;
+  box-shadow: 0px 3px 15px 0 blueviolet;
+}
+nav button a {
+  text-decoration: none;
+  color: white;
+}
+nav button:hover {
+  border: 0.5px solid blueviolet;
+  border-radius: 5px;
+  height: 35px;
+  width: 70px;
+  box-shadow: 0px 3px 15px 0 blueviolet;
+  background-color: blueviolet;
+  margin: 0 40px 0 0;
+}
 
 /* ********************************************************************************************************************* */
 
 /* MAIN CSS */
-body{
-    background-color: aliceblue;
+body {
+  background-color: aliceblue;
 }
-.main{
-    display:  flex ;  
+.main {
+  display: flex;
 }
-.main .left  {
-    /* width:16%; */
-    height: 0;
-    margin: 100px 0 0 200px;
+.main .left {
+  /* width:16%; */
+  height: 0;
+  margin: 100px 0 0 200px;
 }
-.main .left h1{
-    font-size: 70px;
+.main .left h1 {
+  font-size: 70px;
 }
-.main .left h1 span{
-    color: #8a2be3;
+.main .left h1 span {
+  color: #8a2be3;
 }
-.main .content label{
-    display: block;
-    
-    font-weight: 800;
+.main .content label {
+  display: block;
+
+  font-weight: 800;
 }
-.content form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    position: absolute;
-    margin: 110px 0 0 0;
-    border: 1px solid black;
-    border-radius: 8px;
-    height: 80px;
-    width: 70%;
-    background-color: white;
+.content form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  margin: 110px 0 0 0;
+  border: 0px solid black;
+  border-radius: 8px;
+  height: 80px;
+  width: 70%;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.297);
 }
-.main .content input{
-    display: inline;
-    border: 1px solid black;
-    border-radius: 12px;
-    padding: 10px;
-    width: 215px;
-    height: 40px; 
+.main .content input {
+  display: inline;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px;
+  width: 215px;
+  height: 40px;
 }
-.main .content input[type=date]{
-    height: 18px;
-    width: 196px;
+.main .content input[type="date"] {
+  height: 18px;
+  width: 196px;
 }
-.how{
-margin: 560px 0 0 0;
+
+/* **************************************************************** */
+
+.how {
+  margin: 560px 0 0 0;
 }
-.works{
-    text-align: center;
+.works {
+  text-align: center;
 }
-.works h1{
-    font-size: 3em;
+.works h1 {
+  font-size: 3em;
 }
-.grid-container{
-    margin: 0 0 0 0 ;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 300px ;
-    
-    
+.grid-container {
+  margin: 10px 0 0 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 300px;
 }
-.grid-item{
-    border: 2px solid;
-    text-align: center;
+.grid-item {
+  
+  text-align: center;
 }
-.Location img{
-    height: 100px;
-    width: 100px;
-    margin: 80px 0 0 0;
+.Location img {
+  height: 100px;
+  width: 100px;
+  margin: 80px 0 0 0;
 }
-.Location h1{
-    margin: 20px 0 0 0;
+.Location h1 {
+  margin: 20px 0 0 0;
+}
+.Date1 img {
+  height: 100px;
+  width: 100px;
+  margin: 80px 0 0 0;
+}
+.Date1 h1 {
+  margin: 20px 0 0 0;
+}
+.Date2 img {
+  height: 100px;
+  width: 100px;
+  margin: 80px 0 0 0;
+  box-shadow: 0 0 0 0 blueviolet;
+}
+.Date2 h1 {
+  margin: 20px 0 0 0;
+}
+/* ************************************************* */
+.services {
+  margin: 100px 0 0 0;
+}
+.services .heading {
+  text-align: center;
+}
+.services .heading h1 {
+  font-size: 3em;
+}
+.car-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  margin: 70px auto;
+  width: 80%;
+}
+.car-container .car-items {
+  text-align: center;
+  padding: 30px;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 40px rgba(0, 0, 0, 0.1);
+}
+.car-container .car-items img {
+  width: 300px;
+  height: 190px;
+  border-radius: 1rem;
+}
+.car-container .car-items .car-dtl{
+  text-align: left;
+  padding: 0 0 0 17px;
+}
+.car-container .car-items .car-dtl p{
+  border: 1px solid;
+  border-radius: 0.5rem;
+  width: 58px;
+  text-align: center;
+  margin-top: 4px;
+}
+.car-container .car-items .car-dtl h3{
+  font-weight: 700;
+  margin-top: 8px;
+}
+.car-container .car-items .car-dtl h2{
+  margin-top: 5px;
+  color: rgb(119, 10, 222);
+  font-size: 1.5rem;
+}
+.car-container .car-items .car-dtl h2 span{
+  color: black;
+  font-size: 15px;
+}
+.car-container .car-items .car-dtl button{
+  padding: 10px;
+  margin:5px auto;
+  width: 305px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 3, 51) ;
+  border-radius: 0.5rem;
+  border: 0px ;
+  box-shadow: 0 0 10px rgb(3, 3, 51);
+}
+.car-container .car-items .car-dtl button:hover{
+  padding: 10px;
+  margin:5px auto;
+  width: 305px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(119, 10, 222) ;
+  border-radius: 0.5rem;
+  border: 0px ;
+}
+.car-container .car-items .car-dtl button a{
+  text-decoration: none;
+  color: white;
 }
